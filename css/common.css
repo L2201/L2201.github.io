@@ -1,0 +1,13 @@
+/* css reset */
+body,ol,ul,li,input,form,p,option,table,span,textarea,tr,td,a,img,select,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+body{font-family:"微软雅黑";font-size:14px;color:#231F20;background:#ffe;}
+img{border:0;}
+input,img,button,select{vertical-align:middle;}
+textarea,input{border: none;outline: none;background-color: transparent;height:13px;}
+ul,ol{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+.left{float: left;}
+.right{float: right;}
+a{text-decoration:none;}
+.container{min-width: 1300px;margin: 0 auto;background: #ffe;height: 100%;position: relative;}
+.none{display: none;}

@@ -1,0 +1,187 @@
+@charset "utf-8";
+/*.verification{
+    width: 500px;
+    height:350px;
+    border:1px solid #d6d6d6;
+    margin: 100px auto;
+    background-color: #ffeff5;
+    box-shadow: 0px 0px 20px 2px #d6d6d6;
+}
+.question{
+    text-align: center;
+    height:50px;
+    line-height:50px;
+    font-size: 22px;
+    color: #f3f;
+    margin-top: 50px;
+}
+.name,.password{
+    height: 35px;
+    width: 200px;
+    margin: 20px auto;
+}
+.name input,.password input{
+    width: 127px;
+    height: 100%;
+    line-height: 30px;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 0 15px;
+    margin-left: 10px;
+
+}
+.name span,.password span{
+    vertical-align: middle;
+}
+.verification_btn{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height:40px;
+    text-align: center;
+    background-color: #f2ff68;
+    margin: 30px auto;
+    color: #f3f;
+    cursor: pointer;
+}
+.verification_btn:hover{
+    background-color: #ff3;
+    transition: all 0.5s;
+    -moz-transition:all 0.5s; !* Firefox 4 *!
+    -webkit-transition:all 0.5s; !* Safari and Chrome *!
+    -o-transition:all 0.5s; !* Opera *!
+}*/
+
+
+.bg{
+    width: 100%;
+    height: 1000px;
+    background: url("../../img/LoveTree/login_bg.jpg") no-repeat center center;
+    position: relative;
+}
+.login{
+
+    background-color: transparent;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -155px;
+    margin-top: -255px;
+}
+.login_inner{
+    width: 310px;
+    height: 420px;
+    border: 1px solid #00608f;
+    margin: 10px auto;
+    border-radius:5px;
+}
+.login_inner .close{
+    position: absolute;
+    top:20px;
+    right:10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    /*animation: 1s aaa linear infinite;*/
+}
+/*@keyframes aaa {
+    0%{
+        top:20px;
+    }
+    50%{
+        top:30px;
+    }
+    100%{
+        top:20px;
+    }
+}*/
+.login_inner .close:hover{
+    transform:rotate(180deg);
+
+}
+.login_info{
+    width: 90px;
+    margin: 55px auto;
+    text-align: center;
+}
+.login_info i{
+    font-size: 36px;
+    color: #00608f;
+}
+.login_info span{
+    font-size: 22px;
+    color: #00608f;
+}
+.login_inner ul{
+    margin: 25px auto;
+    width: 257px;
+}
+.login_inner ul li{
+    margin-top: 10px;
+    position: relative;
+}
+.login_inner ul li input{
+    width: 220px;
+    height: 35px;
+    border: 1px solid #00608f;
+    border-radius: 5px;
+    padding-left: 35px;
+}
+.login_inner ul li i{
+    position: absolute;
+    font-size: 24px;
+    color: #00608f;
+    top:6px;
+    left: 5px;
+}
+.login_inner ul li button{
+    width: 257px;
+    height: 40px;
+    border-radius: 5px;
+    border:none;
+    background-color: #349ef6;
+    color: #fff;
+}
+
+.btn:before {                                         /*<!-- 这边是按下前的效果-->*/
+    content:"";
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    padding:8px;
+    left:-8px;
+    top:-8px;
+    z-index:-1;
+}
+
+.btn:active {                         /*<!-- 这边是按下后的效果-->*/
+    padding-bottom:9px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:6px;                      /*<!-- 上面是按下文字偏移的像素-->*/
+    top:1px;
+    background-image: linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(0,162,255)), color-stop(1, rgb(0,162,255)));
+}
+
+.Petal{
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: url("../../img/LoveTree/Petal1.png"),url("../../img/LoveTree/Petal2.png");
+    animation: 10s Petal linear infinite;
+    pointer-events: none;
+}
+@keyframes Petal {
+    0%{
+        background-position: 0 0,0 0;
+    }
+    100%{
+        background-position: -500px 500px,-1000px 500px;
+    }
+}
