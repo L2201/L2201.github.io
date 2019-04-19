@@ -48,7 +48,7 @@
 
         }
     </style>
-    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="../js/FuXiShan/jquery-3.1.0.min.js"></script>
     <script>
         $(function () {
             var collums = 5;//列
@@ -71,7 +71,7 @@
                             })
                             .find('.box')
                             .css({
-                                'background-image': 'url(../img/FuXiShan/' + (r * collums + c) + '.jpg)',
+                                'background-image': 'url(../img/FuXiShan/' + (r * collums + c) + '.JPG)',
                                 'transform': 'scale(0.9)'
                             })
                             .end()
@@ -127,7 +127,7 @@
                                 'translateY(' + (30*r-60) + 'px)'
                             });
                             $this.find('div').css({
-                                'background-image': 'url(../img/FuXiShan/' + index + '.jpg)',
+                                'background-image': 'url(../img/FuXiShan/' + index + '.JPG)',
                                 'background-size': 'contain',
                                 'transform': 'scale(0.9)'
                             });
