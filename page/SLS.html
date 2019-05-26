@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Love You</title>
+    <link rel="shortcut icon" href="../img/LoveTree/love.ico" />
+    <link rel="stylesheet" href="../css/JieTu/lanren.css">
+</head>
+<body>
+
+<!-- 代码部分begin -->
+<div id="wrap" class="wrap">
+    <div class="photo" id="photo_{{index}}" onclick="turn(this)">
+        <div class="photo_wrap" >
+            <div class="side side_front">
+                <div class="image">
+                    <img src="../img/newSLS/{{img}}" alt="{{alt}}"/>
+                </div>
+                <div class="capation">
+                    {{caption}}
+                </div>
+            </div>
+            <div class="side side_back">
+                <div class="desc">
+                    {{desc}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+	var myData = [];
+var myDataStr = "1.你知道吗<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+2.我真的好想你<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+3.每时每刻每分每秒<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+4.美好的时光<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+5.你还记得吗<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+6.每当往事浮现<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+7.就会想到之前的快乐<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+8.心里的想念油然而生<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+9.历历在目<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+10.每天都会梦到你<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+11.梦到我们灿烂的笑<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+12.无忧无虑<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+13.牵手去远方<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+14.想带你去看晴空万里<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+15.想大声告诉你我为你着迷<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+16.每当想到这里(翻转)<br>\
+<br>\
+感到好幸福<br>\
+因为有你<br>\
+<br>\
+<br>\
+17.虽然我们也会偶尔吵架冷战<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+18.但我并不想这样<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+19.一定是我有什么做的不对的地方<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+20.如果没有你在身边(翻转)<br>\
+<br>\
+窗外就没有风景<br>\
+<br>\
+<br>\
+21.如果没有你在身后<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+22.我又怎会飞的更高更远<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+23.我愿为你变成守护神<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+24.每天在你身边守护你<br>\
+<br>\
+我爱你<br>\
+<br>\
+<br>\
+25.我奢求这么一个机会(翻转)<br>\
+<br>\
+再让我有这样一个机会<br>\
+<br>\
+<br>\
+26.我想你好想好想(翻转)<br>\
+<br>\
+每次都会偷偷流泪<br>\
+然后再重新坚强<br>\
+<br>\
+<br>\
+27.我想一直这样守在你身边(翻转)<br>\
+<br>\
+直到老去<br>\
+<br>\
+<br>\
+28.想带你攀上一座座山(翻转)<br>\
+<br>\
+看远处没看过的风景<br>\
+<br>\
+<br>\
+29.高处不胜寒一起走天边(翻转)<br>\
+<br>\
+你说：永远有多远？<br>\
+我说：比时间多一秒就是永远<br>\
+你说：世界有多大？<br>\
+我说：你走到哪里，世界就有多大<br>\
+<br>\
+<br>\
+30.愿得一人心白首不相离<br>\
+<br>\
+我爱你<br>\
+我爱你<br>\
+我爱你<br>\
+我爱你<br>\
+我爱你<br>\
+我爱你<br>\
+我爱你<br>\
+我爱你<br>\
+我爱你<br>\
+"
+//定义函数分割myData数据 , myData接收分好组的数据 :以三个连续的<br>\标记为分界
+
+var d = myDataStr.split("<br><br><br>");   //以三个br分出不同大主题
+for(var i=0 ;i< d.length;i++){
+    var c = d[i].split("<br><br>");
+    myData.push(
+        {
+            img:c[0].replace('.',"")+".jpg",
+            caption:c[0].split('.')[1],
+            desc:c[1]
+        }
+    )
+}
+</script>
+<script src="../js/JieTu/lanren.js"></script>
+<!-- 代码部分end -->
+
+</body>
+</html>
